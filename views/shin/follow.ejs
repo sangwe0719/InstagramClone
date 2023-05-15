@@ -1,0 +1,96 @@
+<style>
+   #follow{
+   }
+   .followList{
+      width:100%;
+      position:relative;
+      padding:0;
+      margin:0;
+   }
+   .followscroll{
+   margin:0   
+   }
+   .followUser{
+      display:flex;
+      position:relative;
+      list-style:none;
+      width: 100%;
+      padding: 3px;
+      margin: 5px;
+      text-align:center;
+      align-content: center;
+      align-items: center;
+      justify-content: left;
+      font-size: 1.1rem;
+   }
+   .following2{
+      background-color:#EFEFEF;
+      position:relative;
+      left:170px
+   }
+   .followName{
+      position:relative;
+      left: 30px;
+      text-align:left;
+      font-weight:700;
+      display:flex;
+      flex-direction: column;
+   }
+   .followSpan{
+      font-weight:400;
+      font-size:0.8rem;
+   }
+</style>
+
+<div class="modal fade followModal" id="follow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">팔로우</h1>
+      </div>
+      <div class="modal-body modal-dialog modal-dialog-scrollable followscroll">
+         <ul class="followList">
+            <li class="followUser"><img src="/static/src/shin/bird.jpg" width="40px" height="40px" style="border-radius:20px""> 
+               <div class="followName">wonny
+                  <span class="followSpan">양꼬치
+                  </span>
+               </div> 
+               <button type="button" class="btn following2">팔로잉</button>
+            </li>
+            <li class="followUser"><img src="/static/src/shin/kitty2.jpeg" width="40px" height="40px" style="border-radius:20px""> 
+               <div class="followName">he.in.&nbsp;&nbsp;<span class="followSpan"></span>
+               </div> 
+               <button type="button" class="btn following2">팔로잉</button>
+            </li>
+            <li class="followUser"><img src="/static/src/shin/puppy.jpg" width="40px" height="40px" style="border-radius:20px""> 
+               <div class="followName">doyou&nbsp;
+                  <span class="followSpan">불사조</span>
+               </div> 
+               <button type="button" class="btn following2">팔로잉</button>
+            </li>
+            <li class="followUser"><img src="/static/src/shin/fox.jpg" width="40px" height="40px" style="border-radius:20px""> 
+               <div class="followName">mi.ny.&nbsp;
+                  <span class="followSpan">동그라미</span>
+               </div> 
+               <button type="button" class="btn following2">팔로잉</button>
+            </li>
+            <li class="followUser"><img src="/static/src/shin/mool.jpg" width="40px" height="40px" style="border-radius:20px""> 
+               <div class="followName">subin&nbsp;&nbsp;
+                  <span class="followSpan">플랜비</span>
+               </div> 
+               <button type="button" class="btn following2">팔로잉</button>
+            </li>
+            <li class="followUser"><img src="/static/src/shin/deer.jpg" width="40px" height="40px" style="border-radius:20px""> 
+               <div class="followName">so&nbsp;an
+                  <span class="followSpan">userment</span>
+               </div> 
+               <button type="button" class="btn following2">팔로잉</button>
+            </li>
+         </ul>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>

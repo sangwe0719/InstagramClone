@@ -1,0 +1,239 @@
+/* nav ******************************************/
+/* nav bar */
+.nav-bar {
+  position: relative;
+
+  height: 100vh;
+
+  padding: 8px 12px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav bar top */
+/* Instagram icon */
+.instagram-icon-container-large {
+  width: 196px;
+
+  margin: 16px 0 24px 0;
+}
+.instagram-icon-large {
+  padding: 12px 0 7px 12px;
+}
+
+.instagram-icon-container-mid {
+  width: 48px;
+
+  margin: 16px 0 24px 0;
+}
+.instagram-icon-mid {
+  padding: 12px;
+}
+
+.nav-bar-mid > a > div {
+  margin: 8px 0px;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-mid-text {
+  padding: 0 0 0 16px;
+
+  /* Set text in vertical center */
+  height: var(--nav-bar-svg);
+  line-height: var(--nav-bar-svg);
+}
+
+.main-profile {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* nav bar end */
+.nav-bar-end {
+  margin-top: auto; /* Locate .nav-bar-end at the end of the column*/
+}
+
+.nav-bar-end div {
+  margin: 4px 0px;
+  padding: 12px;
+}
+
+/* Responsive web ******************************************/
+/* Screen size : nav-large */
+@media screen and (max-width: 100vw) {
+  /* Hide */
+  .nav-mid,
+  .nav-small-top {
+    display: none;
+  }
+
+  /* Show */
+  .nav-large {
+    display: block;
+  }
+
+  .nav {
+    /* Set nav bar on the side */
+    position: fixed;
+    z-index: 100;
+
+    border-right: 1px solid var(--nav-bar-border-color);
+  }
+}
+
+/* Screen size : nav-mid */
+@media screen and (max-width: 1265px) {
+  /* Hide */
+  .nav-large,
+  .nav-mid-text,
+  .nav-small-top {
+    display: none;
+  }
+
+  /* Show */
+  .nav-mid {
+    display: block;
+  }
+
+  .nav {
+    /* Set nav bar on the side */
+    position: fixed;
+    z-index: 100;
+
+    border-right: 1px solid var(--nav-bar-border-color);
+  }
+}
+
+/* Screen size : small */
+@media screen and (max-width: 767px) {
+  /* navigation bar in bottom ********************/
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    width: 100vw;
+    height: 49px;
+
+    position: fixed;
+    bottom: 0;
+
+    border-top: 1px solid var(--nav-bar-border-color);
+  }
+
+  .nav-bar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-bar-mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100vw;
+
+    background-color: white;
+  }
+
+  .nav-bar-mid > a > div {
+    margin: 0;
+  }
+
+  /* Hide */
+  .nav-large,
+  .nav-mid,
+  .nav-mid-text,
+  .nav-bar-end {
+    display: none;
+  }
+  /* The more specific, the higher priority it gets */
+  .nav-bar-mid > a.search,
+  .nav-bar-mid > a.alarm {
+    display: none;
+  }
+
+  /* Show */
+  .nav-small-bottom {
+    display: block;
+  }
+
+  /* Set order for icons */
+  .home {
+    order: 1;
+  }
+  .explore {
+    order: 2;
+  }
+  .reels {
+    order: 3;
+  }
+  .new-post {
+    order: 4;
+  }
+  .inbox {
+    order: 5;
+  }
+  .profile {
+    order: 6;
+  }
+
+  /* navigation bar on top ************************/
+  .nav-small-top {
+    display: block;
+
+    width: 100vw;
+    height: 60px;
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    border-bottom: 1px solid var(--nav-bar-border-color);
+
+    background-color: white;
+  }
+  /* Show .content right below .nav-small-top */
+  .content {
+    transform: translateY(55px);
+  }
+
+  .nav-small-top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    transform: translateY(26%);
+
+    padding: 0px 16px;
+  }
+
+  .instagram-icon-small {
+    transform: translateY(21%);
+  }
+
+  .nav-small-top-bar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-small-top-search {
+    margin: 0 12px 0 0;
+    padding: 0 8px 0 0;
+
+    border-radius: 8px;
+  }
+
+  .mb-3 {
+    width: 268px;
+
+    margin: 0 0 0 0 !important;
+  }
+}

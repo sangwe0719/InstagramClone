@@ -1,0 +1,47 @@
+:root {
+  --nav-bar-svg: 24px;
+  --nav-bar-border-color: rgb(219, 219, 219);
+  --secondary-text-color: rgb(142, 142, 142);
+  --post-img-width: 452px;
+  --post-img-height: 454px;
+  --font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--font-size);
+}
+
+button {
+  border: none;
+  background: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* To remove unnecessary padding */
+svg {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  font-weight: 600;
+}

@@ -1,0 +1,75 @@
+<style>
+   .feed {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -5px;
+    }
+    
+    .feed .row {
+      display: flex;
+      margin: 2px;
+      width: calc(100% + 10px);
+      height: 100%;
+    }
+    
+    .feed .col {
+      flex-grow: 1;
+      width: 33%;
+      position: relative;
+      overflow: hidden;
+      padding-top: 31%;
+    }
+    
+    .feed .col img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       padding: 0 5px;
+       /* margin-right: 3px; */
+       object-fit: cover;
+     }
+    .feed .col img a {
+      display: block;
+      width: 100%;
+      height: 100%;
+   }
+   </style> 
+   
+   
+   <div class="feed">
+      <div class="row">
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/fox.jpg" alt=""></a>
+        </div>
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/mool.jpg" alt=""></a>
+        </div>
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/bird.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/panda.jpeg" alt=""></a>
+        </div>
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/deer.jpg" alt=""></a>
+        </div>
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/kitty2.jpeg" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/puppy.jpg" alt=""></a>
+        </div>
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/fox.jpg" alt=""></a>
+        </div>
+        <div class="col">
+          <a href="#" alt=""><img src="/static/src/shin/mool3.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>

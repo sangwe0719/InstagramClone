@@ -1,0 +1,49 @@
+<!-- Doctype HTML5 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Encoding for character-->
+    <meta charset="utf-8" />
+    <!-- Viewport setting for Responsive Web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instagram Clone</title>
+    <meta name="description" content="Main page of Instagram Clone" />
+
+    <!-- Favicon from web image -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+    />
+
+    <style>
+      main {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+      }
+    </style>
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <!-- Nav bar -->
+      <%- include("./includes/nav") %>
+
+      <!-- Content -->
+      <%- include("./Jin/content") %>
+    </main>
+
+
+    <footer><%- include ("./includes/footer") %></footer>
+  </body>
+</html>
+

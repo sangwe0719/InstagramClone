@@ -1,0 +1,198 @@
+/* Content ******************************************/
+
+.content {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.content-main {
+  position: relative;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top-bar ******************************************/
+.top-bar {
+  margin: 16px 0 0;
+  padding: 16px 0;
+}
+
+.top-bar-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.top-reels-profile,
+.top-reels-profile-shadow,
+.top-reels-profile-img {
+  border-radius: 50%;
+}
+
+.top-reels-profile,
+.top-reels-profile-shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-reels-profile {
+  background: linear-gradient(45deg, #ffe600 10%, #ff0080, #db20db);
+
+  width: 66px;
+  height: 66px;
+}
+
+.top-reels-profile-shadow {
+  width: 61px;
+  height: 61px;
+
+  background-color: white;
+}
+
+.top-reels-profile-img {
+  width: 56px;
+  height: 56px;
+
+  margin: 5px;
+}
+
+/* Post ******************************************/
+.post {
+  display: flex;
+  justify-content: center;
+}
+
+.post-main {
+  position: relative;
+
+  margin-top: 16px;
+}
+
+.post-main-list {
+  list-style: none;
+}
+
+.post-main-list > section {
+  margin-bottom: 12px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid var(--secondary-text-color);
+}
+
+/* Post header */
+.post-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header-main {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  margin: 8px 4px 8px 5px;
+}
+
+/*D*/
+/* Add gradient circle around content profile header image*/
+.post-header-img {
+  /* background-color: red; */
+}
+
+.post-header-img img {
+  display: block;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+
+.post-header-id {
+  margin: 0 0 0 10px;
+}
+
+.post-header-id .date {
+  color: var(--secondary-text-color);
+}
+
+.post-header-btn {
+  display: flex;
+  align-items: center;
+
+  padding: 8px;
+}
+
+/* Post image */
+.post-image img {
+  width: var(--post-img-width);
+  height: var(--post-img-height);
+}
+
+/* Post mid bar */
+.post-mid-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 4px 0px 0px;
+  padding: 0px 0px 6px;
+}
+
+.post-mid-bar div button {
+  padding: 8px;
+}
+
+/* Post comment */
+.comment-like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+.comment-like-img img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  margin: 0px 5px 0px 0px;
+}
+
+.comment-like-count {
+  margin-left: -1.5px;
+}
+
+.comment-main {
+  margin-bottom: 8px;
+  width: var(--post-img-width);
+}
+
+.comment-tag {
+  width: 100%;
+  word-break: break-all; /* Several lines in one line */
+}
+
+.comment-tag .tag {
+  margin-top: 16px;
+}
+
+.comment-tag a {
+  font-weight: normal;
+}
+
+.form-comment textarea {
+  width: var(--post-img-width);
+  height: 22px;
+  resize: none;
+
+  border: none;
+}

@@ -1,0 +1,146 @@
+body {
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.home-logo {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+.top-close {
+  height: fit-content;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.swiper-container {
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.story-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  position: absolute;
+  z-index: 2;
+}
+.story-profile-image {
+  width: 48px;
+  height: 48px;
+  background-color: #000;
+  border-radius: 75px;
+  background-size: contain;
+  background-position: center center;
+}
+.story-profile-id {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#btn-play,
+#btn-mute {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.soundless-alert-box {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  display: none;
+}
+.swiper {
+  width: 100vw;
+  height: calc(100vh - 32px);
+  max-width: 56.25vh;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+.swiper-wrapper {
+  width: 100%;
+  border-radius: 10px;
+}
+.swiper-slide {
+  text-align: center;
+  background-color: lightgray;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  position: absolute;
+}
+.swiper-button-prev {
+  left: -40px;
+}
+.swiper-button-next {
+  right: -40px;
+}
+.swiper-pagination {
+  width: 100%;
+  display: flex;
+  margin-bottom: 8px;
+}
+.swiper-pagination-bullet {
+  width: 25%;
+  height: auto;
+  background-color: transparent;
+  position: relative;
+  text-align: left;
+  border-radius: 0;
+  opacity: 1;
+  margin-right: 20px;
+  z-index: 2;
+}
+.swiper-pagination-bullet i {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.swiper-pagination-bullet b {
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+}
+.swiper-pagination-bullet-active b {
+  animation-name: loadingBar;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes loadingBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

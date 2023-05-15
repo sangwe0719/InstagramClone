@@ -1,0 +1,28 @@
+ <style>
+.modal{
+  --bs-modal-width: 400px;
+}
+.modal-header{
+  text-align:center;
+  align-content:center;
+  display:block;
+  padding:25px 10px
+  }
+  .btn-light{
+    padding-bottom: 15px;
+    --bs-btn-bg:#fff;
+  }
+ </style>
+ <!-- Modal -->
+ <div class="modal fade" id="click-profile" tabindex="-1" aria-labelledby="click-profile" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 class="modal-title fs-5" id="exampleModalLabel">프로필 사진 바꾸기</h1>
+        </div>
+        <button type="button" class="btn btn-light mbl text-primary">사진 업로드</button>
+        <button type="button" class="btn btn-light text-danger">현재 사진 삭제</button>
+        <button type="button" class="btn btn-light text-black" data-bs-dismiss="modal">취소</button>
+     </div>
+   </div>
+ </div>

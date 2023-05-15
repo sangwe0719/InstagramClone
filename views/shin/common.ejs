@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로필 통합본</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/shin/index.css">
+    <!-- font awasome -->
+    <script src="https://kit.fontawesome.com/b29325fb21.js" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script defer src="/static/js/shin/profile.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!-- profile-main : 바탕화면 -->
+    <div class="profile_main">
+        <!-- section : 컨테이너, 하단공백, 푸터 -->
+        <section>
+            <%- include ("../includes/nav")%>
+            <%- include ("./click-profile")%>
+            <%- include ("./follow")%>
+            <%- include ("./follower")%>
+            <!-- container : 헤더, 하이라이트, 중간버튼, 콘텐츠 들어감 -->
+            <div class="container2">
+                <!-- header : 프로필 상단 -->
+                <!-- <header> -->
+                    <!-- header1 -->
+                    <div class="header1">
+                        <div class="profile-pic">
+                            <button type="button" class="profile-pict" data-bs-toggle="modal" data-bs-target="#click-profile"><img class="pofile-picture" src="/static/src/shin/bird.jpg" alt="오목눈이">
+                            </button>
+                            <!-- Button trigger modal -->
+                        </div>
+                        <!-- profile section 1  -->
+                        <div class="profile-section">
+                            <div class="prow ps-row1">
+                                <h2 class="user-name">PHOENIX</h2>
+                                <button type="button" class="btn editbtn btn-secondary text-black" style="background-color: #EFEFEF" data-bs-toggle="modal" data-bs-target="#profile-edit">
+                                    프로필 편집
+                              </button>
+                        </div>
+                        <ul class="prow ps-row2">
+                            <li class="contents-num proli">
+                                <div>게시물 <span> 15</span></div>
+                            </li>
+                            <li class="follower proli">
+                                <button type="button"  data-bs-toggle="modal" data-bs-target="#follower" class="fbtn"><div>팔로워 <span> 56</span></div></button>
+                            </li>
+                            <li class="following proli">
+                                <button type="button"  data-bs-toggle="modal" data-bs-target="#follow" class="fbtn"><div>팔로우 <span> 36</span></div></button>
+                            </li>
+                        </ul>
+                        <div class="prow ps-row3">
+                            <span class="user-name2">불사조</span>
+                            </br>
+                            <p class="profile-ment">동그랗다</p>
+                        </div>
+                    </div>
+                    <!-- profile section 1 끝 -->
+                </div>
+                <!-- </header> -->
+                <!--======================= hilight 시작 ====================-->
+                <div class="hilight-shell">
+                    <div class="hilight-box">
+                        <ul class="hi-list">
+                            <li class="hili">
+                                <div  class="hipicdiv"><img class="hipic" src="/static/src/shin/bird.jpg" alt="하이라이트">
+                                    <span class="hititle">Now_Playing</span>
+                                </div>
+                            </li>
+                            <li class="hili">
+                                <div class="hipicdiv"><img class="hipic" src="/static/src/shin/bird.jpg" alt="하이라이트">
+                                    <span class="hititle">travel log</span>
+                                </div>
+                            </li>
+                            <li class="hili">
+                                <div class="hipicdiv"><img class="hipic" src="/static/src/shin/bird.jpg" alt="하이라이트">
+                                    <span class="hititle">2022</span>
+                                </div>
+                            </li>
+                            <li class="hili">
+                                <div class="hipicdiv"><img class="hipic" src="/static/src/shin/bird.jpg" alt="하이라이트">
+                                    <span class="hititle">2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- =========================hilight 끝======================== -->
+                <!-- =========================divBar-button 시작======================== -->
+                <div class="divBar-button">
+                    <a href="#"  data-tab="tab1" class="tabbtn divbtn uploaded on"><i class="divicon fa-solid fa-table-cells"><span
+                                class="divtext">게시물</span></i>
+                    </a>
+                    <a href="#"  data-tab="tab2" class="tabbtn divbtn bookmark"><i class="divicon fa-solid fa-bookmark"><span
+                                class="divtext">저장됨</span></i>
+                    </a>
+                    <a href="#"  data-tab="tab3" class="tabbtn divbtn tagged"><i class="divicon fa-solid fa-image-portrait"><span
+                                class="divtext">태그됨</span></i>
+                    </a>
+                </div>
+                <hr class="underBar">
+                <!-- =========================divBar-button 끝======================== -->
+                <!-- =========================contents 시작======================== -->
+                <!-- 콘텐츠 -->
+                <div id="tab1" class="tabbtn cnt on"> 
+                    <%- include("./contents") %>
+                </div>
+                <!-- 저장됨 -->
+                <div id="tab2" class="tabbtn cnt "> 
+                    <%- include("./saved") %>
+                </div>
+                <!-- 태그됨 -->
+                <div id="tab3" class="tabbtn cnt "> 
+                    √<%- include("./tagged") %>
+                </div>
+                <!-- ===============under-blank 시작================== -->
+                <!-- ===============under-blank 끝================== -->
+                <!-- ===============footer 시작===============-->
+                <footer>
+                    <%- include("../includes/footer.ejs") %>
+                </footer>
+                <!-- ===============footer 끝===============-->
+                <!-- =========================contents 끝======================== -->
+            </div>
+            <!--====================== container 끝=================-->
+            <div class="under-blank"></div>
+            
+            
+            
+        </section>
+        <!-- =============== section 끝 =============== -->
+    </div>
+      
+</body>
+
+</html>
